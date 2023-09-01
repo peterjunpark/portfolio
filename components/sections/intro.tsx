@@ -1,9 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useActiveSection } from "@/lib/contexts/active-section-context";
+import avatar from "@/public/profile.jpg";
 import {
   TbArrowRight,
   TbHandRock,
@@ -11,12 +14,23 @@ import {
   TbBrandGithub,
   TbBrandLinkedin,
 } from "react-icons/tb";
-import avatar from "@/public/profile.jpg";
 
 export default function Intro() {
+  const { ref, inView } = useInView({
+    threshold: 0.9,
+  });
+  const { setActiveSection, lastClickTime } = useActiveSection();
+
+  useEffect(() => {
+    if (inView && Date.now() - lastClickTime > 1000) {
+      setActiveSection("intro");
+    }
+  }, [inView, setActiveSection, lastClickTime]);
+
   return (
     <section
       id="intro"
+      ref={ref}
       className="mb-28 max-w-[50rem] scroll-mt-[69rem] text-center sm:mb-0"
     >
       <div className="flex items-center justify-center">

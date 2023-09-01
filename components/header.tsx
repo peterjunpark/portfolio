@@ -7,8 +7,16 @@ import { motion } from "framer-motion";
 import { links } from "@/lib/site-data";
 import { useActiveSection } from "@/lib/contexts/active-section-context";
 
+type SectionName = (typeof links)[number]["name"];
+
 export default function Header() {
-  const [activeSection, setActiveSection] = useActiveSection();
+  const { activeSection, setActiveSection, setLastClickTime } =
+    useActiveSection();
+
+  const handleNavClick = (section: SectionName) => {
+    setActiveSection(section);
+    setLastClickTime(Date.now());
+  };
 
   return (
     <header className="relative z-[999]">
@@ -32,7 +40,7 @@ export default function Header() {
             >
               <Link
                 href={link.hash}
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => handleNavClick(link.name)}
                 className={clsx(
                   "flex w-full items-center justify-center p-3 transition hover:text-stone-950",
                   { "text-stone-950": activeSection === link.name },
