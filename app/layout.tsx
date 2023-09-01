@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} relative bg-stone-100 text-slate-950`}
+        className={`${inter.className} relative bg-stone-100 pt-24 text-slate-950 sm:pt-32`}
       >
         <Header />
         <div className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] sm:w-[68.75rem]"></div>
