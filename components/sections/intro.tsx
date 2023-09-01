@@ -12,6 +12,7 @@ import {
   TbBrandGithub,
   TbBrandLinkedin,
 } from "react-icons/tb";
+import avatar from "@/public/profile.jpg";
 
 export default function Intro() {
   return (
@@ -25,11 +26,10 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="https://placekitten.com/400/400"
-              alt="placeholder"
-              width="192"
-              height="192"
+              src={avatar}
+              alt="Peter Park's handsome face"
               priority={true}
+              quality={95}
               className="h-28 w-28 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
@@ -65,7 +65,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group flex scale-105 items-center
+          className="group mr-2 flex scale-105 items-center
           gap-2 rounded-full bg-stone-800 px-7 py-3 text-white outline-none
           transition hover:scale-110 hover:bg-stone-950 focus:scale-110 active:scale-105"
         >
