@@ -7,10 +7,11 @@ import SectionHeading from "@/components/atoms/section-heading";
 export default function About() {
   return (
     <motion.section
+      id="about"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className="mb-28 max-w-[45rem] text-center leading-relaxed sm:mb-40"
+      className="mb-28 max-w-[45rem] scroll-mt-32 text-center leading-relaxed sm:mb-0"
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">

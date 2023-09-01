@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { projects } from "@/lib/siteData";
+import { projects } from "@/lib/site-data";
 
 type ProjectProps = (typeof projects)[number];
 

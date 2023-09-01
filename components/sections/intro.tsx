@@ -15,7 +15,10 @@ import avatar from "@/public/profile.jpg";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="intro"
+      className="mb-28 max-w-[50rem] scroll-mt-[69rem] text-center sm:mb-0"
+    >
       <div className="flex items-center justify-center">
         {/* Avatar */}
         <div className="relative">

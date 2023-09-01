@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import SectionHeading from "@/components/atoms/section-heading";
-import { projects } from "@/lib/siteData";
+import { projects } from "@/lib/site-data";
 import Project from "@/components/atoms/project";
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-32 ">
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projects.map((project, index) => (
