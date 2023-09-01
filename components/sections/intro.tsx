@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import { intro } from "@/lib/siteData";
 import Link from "next/link";
 import {
   TbArrowRight,
@@ -49,13 +48,26 @@ export default function Intro() {
         </div>
       </div>
       {/* Intro paragraph */}
-      <motion.p
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]"
-      >
-        {intro}
-      </motion.p>
+      <div className="mb-10 mt-4 px-4 font-medium !leading-[1.5]">
+        <motion.h1
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="my-5 text-3xl lowercase text-stone-700"
+        >
+          Hi. I&apos;m Peter.
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-lg"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          consequatur repellendus ratione doloribus, optio nulla nisi totam
+          provident quisquam odio ad. Culpa ducimus similique omnis ipsam
+          officiis iste delectus perspiciatis.
+        </motion.p>
+      </div>
+
       {/* Buttons */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -70,7 +82,7 @@ export default function Intro() {
           transition hover:scale-110 hover:bg-stone-950 focus:scale-110 active:scale-105"
         >
           Contact me here{" "}
-          <TbArrowRight className="opacity-70 group-hover:scale-110" />
+          <TbArrowRight className="opacity-70 group-hover:translate-x-1" />
         </Link>
         <a
           download

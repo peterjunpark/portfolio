@@ -1,11 +1,13 @@
-import Intro from "@/components/sections/intro";
-import Divider from "@/components/sections/divider";
+import { About, Divider, Intro } from "@/components/sections/";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
       <Intro />
-      <Divider />
+      <Divider animate />
+      <About />
+      <Divider animate />
+      {/* Below sections aren't animated on page load */}
     </main>
   );
 }

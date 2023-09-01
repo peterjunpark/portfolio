@@ -3,13 +3,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function Divider() {
+type DividerProps = { animate?: boolean };
+
+export default function Divider({ animate }: DividerProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.125 }}
-      className="my-24 hidden h-16 w-1 rounded-full bg-stone-200 sm:block"
+      {...(animate && {
+        initial: { opacity: 0, y: 100 },
+        animate: { opacity: 1, y: 0 },
+        transition: { delay: 0.135 },
+      })}
+      className="my-24 hidden h-16 w-1 rounded-full rounded-full bg-stone-200 sm:block"
     ></motion.div>
   );
 }

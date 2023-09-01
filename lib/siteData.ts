@@ -31,8 +31,6 @@ export const links = [
   },
 ] as const;
 
-export const intro = "Hi. I'm Peter." as const;
-
 export const experiences = [
   {
     title: "Graduated coding bootcamp",
