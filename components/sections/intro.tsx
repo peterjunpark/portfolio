@@ -1,12 +1,10 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useSectionInView } from "@/lib/hooks";
-import { useActiveSection } from "@/lib/contexts/active-section-context";
 import avatar from "@/public/profile.jpg";
 import {
   TbArrowRight,

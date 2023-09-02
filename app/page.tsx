@@ -1,4 +1,10 @@
-import { About, Divider, Intro, Projects } from "@/components/sections/";
+import {
+  About,
+  Divider,
+  Intro,
+  Projects,
+  Skills,
+} from "@/components/sections/";
 
 export default function Home() {
   return (
@@ -9,6 +15,7 @@ export default function Home() {
       <Divider animate />
       {/* Below sections aren't animated on page load */}
       <Projects />
+      <Skills />
     </main>
   );
 }

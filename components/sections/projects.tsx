@@ -1,10 +1,8 @@
 "use client";
 
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import { projects } from "@/lib/site-data";
 import { useSectionInView } from "@/lib/hooks";
-import { useActiveSection } from "@/lib/contexts/active-section-context";
 import SectionHeading from "@/components/atoms/section-heading";
 import Project from "@/components/atoms/project";
 
@@ -14,8 +12,8 @@ export default function Projects() {
   });
 
   return (
-    <section id="projects" ref={ref} className="scroll-mt-32">
-      <SectionHeading>My projects</SectionHeading>
+    <section id="projects" ref={ref} className="mb-28 scroll-mt-32">
+      <SectionHeading>Featured projects</SectionHeading>
       <div>
         {projects.map((project, index) => (
           <React.Fragment key={index}>
