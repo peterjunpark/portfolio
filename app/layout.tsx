@@ -1,10 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import ActiveSectionContextProvider from "@/lib/contexts/active-section-context";
 import Header from "@/components/header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Work_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Peter Jun Park | Portfolio",

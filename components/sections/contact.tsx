@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { TbMailShare } from "react-icons/tb";
 import { useSectionInView } from "@/lib/hooks";
+import { sendEmail } from "@/lib/actions/send-email";
 import SectionHeading from "@/components/atoms/section-heading";
 
 export default function Contact() {
@@ -11,6 +12,7 @@ export default function Contact() {
     section: "contact",
     activeThreshold: 0.5,
   });
+
   return (
     <motion.section
       id="contact"
@@ -28,14 +30,26 @@ export default function Contact() {
         </a>{" "}
         or through this form.
       </p>
-      <form className="align-center mt-10 flex flex-col">
+      <form
+        action={async (data) => {
+          // Server action
+          await sendEmail(data);
+        }}
+        className="align-center mt-10 flex flex-col"
+      >
         <input
+          name="email"
           type="email"
+          maxLength={69}
           placeholder="Your email"
+          required
           className="borderDim h-14 rounded-lg p-4 focus:outline-stone-600"
         />
         <textarea
+          name="message"
+          maxLength={6969}
           placeholder="Your message"
+          required
           className="borderDim my-3 h-52 rounded-lg p-4 focus:outline-stone-600"
         />
         <button
