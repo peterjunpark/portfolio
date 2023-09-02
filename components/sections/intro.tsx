@@ -23,7 +23,7 @@ export default function Intro() {
     <section
       id="intro"
       ref={ref}
-      className="mb-28 max-w-[50rem] scroll-mt-[69rem] text-center sm:mb-0"
+      className="sectionEndMargin mt-36 max-w-[50rem] scroll-mt-[69rem] text-center"
     >
       <div className="flex items-center justify-center">
         {/* Avatar */}

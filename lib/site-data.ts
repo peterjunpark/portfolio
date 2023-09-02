@@ -72,21 +72,29 @@ export const projects = [
     title: "Mensu",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js 13", "MongoDB", "Prisma", "TailwindCSS"],
+    tags: [
+      "WIP",
+      "React",
+      "Next.js 13",
+      "MongoDB",
+      "Prisma",
+      "TailwindCSS",
+      "Typescript",
+    ],
     imageUrl: profile,
   },
   {
     title: "DSA Visualizer",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["D3.js", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "A web app that visualizes common data structures and algoriths in an easy to digest format.",
+    tags: ["WIP", "D3.js", "TypeScript", "Next.js 13", "TailwindCSS"],
     imageUrl: profile,
   },
   {
     title: "Portfolio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js 13", "TailwindCSS", "Framer Motion"],
+      "My portfolio website features animations using Framer Motion.",
+    tags: ["React", "Next.js 13", "TailwindCSS", "Framer Motion", "Typescript"],
     imageUrl: profile,
   },
 ] as const;

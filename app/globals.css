@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 html {
-    --line-color: #e5e7eb;
+  --line-color: #e5e7eb;
+}
+
+.borderDim {
+  @apply border border-black/10;
+}
+
+.sectionEndMargin {
+  @apply mb-28 sm:mb-48;
 }

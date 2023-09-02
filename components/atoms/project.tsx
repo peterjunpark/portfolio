@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
+import clsx from "clsx";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { projects } from "@/lib/site-data";
 
@@ -46,7 +47,12 @@ export default function Project({
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="rounded-full bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white"
+                className={clsx(
+                  "rounded-full bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white",
+                  {
+                    "bg-red-900/80": tag === "WIP",
+                  },
+                )}
               >
                 {tag}
               </li>
