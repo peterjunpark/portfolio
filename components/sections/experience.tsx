@@ -13,7 +13,7 @@ import SectionHeading from "@/components/atoms/section-heading";
 export default function Experience() {
   const { ref } = useSectionInView({
     section: "experience",
-    activeThreshold: 0.3,
+    activeThreshold: 0.1,
   });
 
   return (

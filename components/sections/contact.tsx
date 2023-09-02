@@ -14,10 +14,10 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
+      ref={ref}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      ref={ref}
       className="sectionEndMargin w-[min(100%, 38rem)] text-center"
     >
       <SectionHeading>Contact me</SectionHeading>

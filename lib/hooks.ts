@@ -10,10 +10,10 @@ type useSectionInViewProps = {
 
 export function useSectionInView({
   section,
-  activeThreshold,
+  activeThreshold = 0.9,
 }: useSectionInViewProps) {
   const { ref, inView } = useInView({
-    threshold: (activeThreshold = 0.9),
+    threshold: activeThreshold,
   });
   const { setActiveSection, lastClickTime } = useActiveSection();
 
