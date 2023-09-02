@@ -102,7 +102,7 @@ export default function Intro() {
           outline-none transition hover:scale-110 focus:scale-110 active:scale-105"
         >
           Download CV{" "}
-          <TbDownload className="opacity-70 group-hover:scale-110" />
+          <TbDownload className="-translate-y-[0.04rem] opacity-70 group-hover:translate-y-[0.08rem]" />
         </a>
         <a
           href="https://linkedin.com/in/qkr0wns"
