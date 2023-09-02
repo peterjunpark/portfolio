@@ -39,8 +39,8 @@ export default function About() {
         collaborate closely with development teams to ensure that documentation
         evolves in tandem with the product, providing users with up-to-date and
         accessible resources. From API documentation to user guides, I strive to
-        make technical information approachable and comprehensible, ultimately
-        contributing to a seamless and satisfying user journey.
+        make technical information approachable, contributing to a seamless and
+        satisfying user journey.
       </p>
     </motion.section>
   );
