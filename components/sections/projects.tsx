@@ -10,7 +10,7 @@ import Project from "@/components/atoms/project";
 export default function Projects() {
   const { ref } = useSectionInView({
     section: "projects",
-    activeThreshold: 0.5,
+    activeThreshold: 0.7,
   });
 
   return (
