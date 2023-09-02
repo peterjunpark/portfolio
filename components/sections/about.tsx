@@ -2,21 +2,14 @@
 
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useActiveSection } from "@/lib/contexts/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "@/components/atoms/section-heading";
 
 export default function About() {
-  const { ref, inView } = useInView({
-    threshold: 0.75,
+  const { ref } = useSectionInView({
+    section: "about",
+    activeThreshold: 1,
   });
-  const { setActiveSection, lastClickTime } = useActiveSection();
-
-  useEffect(() => {
-    if (inView && Date.now() - lastClickTime > 1000) {
-      setActiveSection("about");
-    }
-  }, [inView, setActiveSection, lastClickTime]);
 
   return (
     <motion.section
@@ -32,7 +25,14 @@ export default function About() {
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
         aspernatur exercitationem maiores iure earum inventore, facere quisquam
         voluptates quidem error. Deleniti impedit sequi commodi facere ut
-        distinctio magnam earum facilis?
+        distinctio magnam earum facilis? Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Dolorem aspernatur exercitationem maiores iure earum
+        inventore, facere quisquam voluptates quidem error. Deleniti impedit
+        sequi commodi facere ut distinctio magnam earum facilis? Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Dolorem aspernatur
+        exercitationem maiores iure earum inventore, facere quisquam voluptates
+        quidem error. Deleniti impedit sequi commodi facere ut distinctio magnam
+        earum facilis?
       </p>
     </motion.section>
   );

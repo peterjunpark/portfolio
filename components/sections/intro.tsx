@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useSectionInView } from "@/lib/hooks";
 import { useActiveSection } from "@/lib/contexts/active-section-context";
 import avatar from "@/public/profile.jpg";
 import {
@@ -16,16 +17,9 @@ import {
 } from "react-icons/tb";
 
 export default function Intro() {
-  const { ref, inView } = useInView({
-    threshold: 0.9,
+  const { ref } = useSectionInView({
+    section: "intro",
   });
-  const { setActiveSection, lastClickTime } = useActiveSection();
-
-  useEffect(() => {
-    if (inView && Date.now() - lastClickTime > 1000) {
-      setActiveSection("intro");
-    }
-  }, [inView, setActiveSection, lastClickTime]);
 
   return (
     <section

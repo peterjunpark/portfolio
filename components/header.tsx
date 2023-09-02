@@ -6,8 +6,7 @@ import clsx from "clsx";
 import { motion } from "framer-motion";
 import { links } from "@/lib/site-data";
 import { useActiveSection } from "@/lib/contexts/active-section-context";
-
-type SectionName = (typeof links)[number]["name"];
+import type { SectionName } from "@/lib/types";
 
 export default function Header() {
   const { activeSection, setActiveSection, setLastClickTime } =
