@@ -69,12 +69,17 @@ export default function Intro() {
         <motion.p
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-lg"
+          className="text-lg font-normal"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          consequatur repellendus ratione doloribus, optio nulla nisi totam
-          provident quisquam odio ad. Culpa ducimus similique omnis ipsam
-          officiis iste delectus perspiciatis.
+          I&apos;m <span className="font-semibold">Peter</span> Jun Park—a{" "}
+          <span className="font-semibold">full-stack web developer</span> with a
+          background in{" "}
+          <span className="font-semibold">technical documentation</span>. My
+          commitment to <span className="italic">clear communication</span> and{" "}
+          <span className="italic">problem-solving</span>, honed through my
+          writing experience, complements my passion for creating efficient and
+          user-friendly web solutions. I&apos;m eager to contribute my skills
+          and creativity to your team.
         </motion.p>
       </div>
 

@@ -20,19 +20,13 @@ export default function About() {
       transition={{ delay: 0.175 }}
       className="sectionEndMargin max-w-[45rem] scroll-mt-32 text-center leading-7"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>More about me</SectionHeading>
       <p className="mb-3">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
-        aspernatur exercitationem maiores iure earum inventore, facere quisquam
-        voluptates quidem error. Deleniti impedit sequi commodi facere ut
-        distinctio magnam earum facilis? Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Dolorem aspernatur exercitationem maiores iure earum
-        inventore, facere quisquam voluptates quidem error. Deleniti impedit
-        sequi commodi facere ut distinctio magnam earum facilis? Lorem ipsum
-        dolor, sit amet consectetur adipisicing elit. Dolorem aspernatur
-        exercitationem maiores iure earum inventore, facere quisquam voluptates
-        quidem error. Deleniti impedit sequi commodi facere ut distinctio magnam
-        earum facilis?
+        As a full-stack web developer, I have honed my skills in both front-end
+        and back-end technologies. From creating responsive and visually
+        appealing user interfaces to architecting robust server-side solutions,
+        I&apos;m equipped to handle the entire development stack. As a technical
+        writer, I have intimate familiarity with the docs-as-code approach.
       </p>
     </motion.section>
   );
