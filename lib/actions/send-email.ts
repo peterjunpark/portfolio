@@ -1,7 +1,9 @@
 "use server";
 
 import { Resend } from "resend";
+import React from "react";
 import { parseErrorMsg, validateEmailString } from "@/lib/utils";
+import ContactEmailTemplate from "@/lib/email/contact-email-template";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -15,21 +17,25 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
+  let data;
   try {
-    await resend.emails.send({
+    data = await resend.emails.send({
       from: "Portfolio Contact Form <onboarding@resend.dev>",
       to: "peterjpark@pm.me",
       subject: "MSG FROM peterjunpark.me",
-      text: message as string,
+      react: React.createElement(ContactEmailTemplate, {
+        message: message as string,
+        email: email as string,
+      }),
       reply_to: email as string,
     });
 
     return {
-      success: "Email send :D",
+      success: data,
     };
   } catch (err: unknown) {
     return {
-      error: parseErrorMsg(err),
+      error: `Server Action Error: ${parseErrorMsg(err)}`,
     };
   }
 };

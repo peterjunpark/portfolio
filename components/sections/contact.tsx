@@ -2,10 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { TbMailShare } from "react-icons/tb";
+import { toast } from "react-hot-toast";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/lib/actions/send-email";
 import SectionHeading from "@/components/atoms/section-heading";
+import SubmitButton from "@/components/atoms/submit-button";
 
 export default function Contact() {
   const { ref } = useSectionInView({
@@ -33,7 +34,13 @@ export default function Contact() {
       <form
         action={async (data) => {
           // Server action
-          await sendEmail(data);
+          const { success, error } = await sendEmail(data);
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Thanks for reaching out! I'll get back to you soon.");
         }}
         className="align-center mt-10 flex flex-col"
       >
@@ -52,15 +59,7 @@ export default function Contact() {
           required
           className="borderDim my-3 h-52 rounded-lg p-4 focus:outline-stone-600"
         />
-        <button
-          type="submit"
-          className="group flex h-[3rem] w-[8rem] items-center justify-center
-          gap-2 rounded-full bg-stone-800 text-white outline-none
-          transition-all hover:scale-110 hover:bg-stone-950 focus:scale-110 active:scale-105"
-        >
-          Submit{" "}
-          <TbMailShare className="text-xl opacity-70 transition-all group-hover:-translate-y-[0.1rem] group-hover:translate-x-[0.1rem]" />
-        </button>
+        <SubmitButton />
       </form>
     </motion.section>
   );
