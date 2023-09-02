@@ -17,6 +17,7 @@ import {
 export default function Intro() {
   const { ref } = useSectionInView({
     section: "intro",
+    activeThreshold: 0.9,
   });
 
   return (
@@ -94,14 +95,13 @@ export default function Intro() {
           <TbArrowRight className="opacity-70 group-hover:translate-x-1" />
         </Link>
         <a
-          download
           href="/PeterPark_CV_dev.pdf"
           target="_blank"
           className="group flex cursor-pointer items-center
           gap-2 rounded-full border border-black/10 bg-white px-7 py-3 lowercase text-stone-900
           outline-none transition hover:scale-110 focus:scale-110 active:scale-105"
         >
-          Download CV{" "}
+          Get My CV{" "}
           <TbDownload className="-translate-y-[0.04rem] opacity-70 group-hover:translate-y-[0.08rem]" />
         </a>
         <a

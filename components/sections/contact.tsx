@@ -9,6 +9,7 @@ import SectionHeading from "@/components/atoms/section-heading";
 export default function Contact() {
   const { ref } = useSectionInView({
     section: "contact",
+    activeThreshold: 0.5,
   });
   return (
     <motion.section

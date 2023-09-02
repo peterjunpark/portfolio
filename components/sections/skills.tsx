@@ -18,6 +18,7 @@ const fadeInVariants = {
 export default function Skills() {
   const { ref } = useSectionInView({
     section: "skills",
+    activeThreshold: 0.9,
   });
 
   return (

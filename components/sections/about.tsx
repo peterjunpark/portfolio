@@ -8,7 +8,7 @@ import SectionHeading from "@/components/atoms/section-heading";
 export default function About() {
   const { ref } = useSectionInView({
     section: "about",
-    activeThreshold: 1,
+    activeThreshold: 0.9,
   });
 
   return (
