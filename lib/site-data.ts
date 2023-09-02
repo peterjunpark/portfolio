@@ -111,5 +111,5 @@ export const skills = [
   "JWT",
   "Framer Motion",
   "D3.js",
-  "...",
+  "DITA XML",
 ] as const;

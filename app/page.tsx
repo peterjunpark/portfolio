@@ -1,6 +1,7 @@
 import {
   About,
   Divider,
+  Experience,
   Intro,
   Projects,
   Skills,
@@ -15,7 +16,10 @@ export default function Home() {
       <Divider animate />
       {/* Below sections aren't animated on page load */}
       <Projects />
+      <Divider />
       <Skills />
+      <Divider />
+      <Experience />
     </main>
   );
 }

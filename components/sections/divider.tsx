@@ -13,7 +13,7 @@ export default function Divider({ animate }: DividerProps) {
         animate: { opacity: 1, y: 0 },
         transition: { delay: 0.135 },
       })}
-      className="my-24 hidden h-16 w-1 rounded-full bg-stone-200 sm:block"
+      className="my-28 hidden h-16 w-1 rounded-full bg-slate-200 sm:block"
     ></motion.div>
   );
 }

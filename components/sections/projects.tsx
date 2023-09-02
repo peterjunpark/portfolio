@@ -12,7 +12,7 @@ export default function Projects() {
   });
 
   return (
-    <section id="projects" ref={ref} className="mb-28 scroll-mt-32">
+    <section id="projects" ref={ref} className="mb-28 scroll-mt-32 sm:mb-0">
       <SectionHeading>Featured projects</SectionHeading>
       <div>
         {projects.map((project, index) => (

@@ -87,8 +87,8 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group mr-2 flex scale-105 items-center
-          gap-2 rounded-full bg-stone-800 px-7 py-3 text-white outline-none
-          transition hover:scale-110 hover:bg-stone-950 focus:scale-110 active:scale-105"
+          gap-2 rounded-full bg-stone-800 px-7 py-3 lowercase text-white
+          outline-none transition hover:scale-110 hover:bg-stone-950 focus:scale-110 active:scale-105"
         >
           Contact me here{" "}
           <TbArrowRight className="opacity-70 group-hover:translate-x-1" />
@@ -98,8 +98,8 @@ export default function Intro() {
           href="/PeterPark_CV_dev.pdf"
           target="_blank"
           className="group flex cursor-pointer items-center
-          gap-2 rounded-full border border-black/10 bg-white px-7 py-3 text-stone-900 outline-none
-          transition hover:scale-110 focus:scale-110 active:scale-105"
+          gap-2 rounded-full border border-black/10 bg-white px-7 py-3 lowercase text-stone-900
+          outline-none transition hover:scale-110 focus:scale-110 active:scale-105"
         >
           Download CV{" "}
           <TbDownload className="opacity-70 group-hover:scale-110" />
