@@ -77,9 +77,7 @@ export default function Intro() {
           <span className="font-semibold">technical documentation</span>. My
           commitment to <span className="italic">clear communication</span> and{" "}
           <span className="italic">problem-solving</span>, honed through my
-          writing experience, complements my passion for creating efficient and
-          user-friendly web solutions. I&apos;m eager to contribute my skills
-          and creativity to your team.
+          experiences, complements my passion for creating robust web solutions.
         </motion.p>
       </div>
 

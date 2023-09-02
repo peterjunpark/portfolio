@@ -22,11 +22,25 @@ export default function About() {
     >
       <SectionHeading>More about me</SectionHeading>
       <p className="mb-3">
-        As a full-stack web developer, I have honed my skills in both front-end
-        and back-end technologies. From creating responsive and visually
-        appealing user interfaces to architecting robust server-side solutions,
-        I&apos;m equipped to handle the entire development stack. As a technical
-        writer, I have intimate familiarity with the docs-as-code approach.
+        In the realm of development, my bread-and-butter toolkit is the MERN
+        stack. <span className="font-semibold">Continual learning</span> is
+        integral to my approach, whether it involves creating engaging front-end
+        interfaces or designing server-side solutions. My goal is to deliver
+        code that aligns with both user expectations and business objectives.
+        And my commitment to detail and adherence to best practices help ensure
+        the dependability of my work.
+        <br />
+        <br />
+        As a technical writer, I play a vital role in bridging the gap between
+        complex technical concepts and end-users. My dedication to the{" "}
+        <span className="font-semibold">docs-as-code</span> methodology,
+        including modularity and version control, means that I treat
+        documentation as a fundamental part of the development process. I
+        collaborate closely with development teams to ensure that documentation
+        evolves in tandem with the product, providing users with up-to-date and
+        accessible resources. From API documentation to user guides, I strive to
+        make technical information approachable and comprehensible, ultimately
+        contributing to a seamless and satisfying user journey.
       </p>
     </motion.section>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { TbBriefcase, TbSchool, TbWriting } from "react-icons/tb";
+import { TbBriefcase, TbSchool } from "react-icons/tb";
 import profile from "@/public/profile.jpg";
 // Add images to public
 
@@ -52,7 +52,7 @@ export const experiences = [
     location: "Mississauga, ON",
     description:
       "Nam mattis mauris at nisi dictum tempus. Phasellus nec facilisis nibh, a ultrices odio. Ut blandit id erat quis euismod. Nullam sollicitudin, nibh sed pharetra tincidunt, urna ex ultrices nisi, id maximus augue sapien non purus. Sed sed orci tristique, dictum mi et, condimentum justo. Phasellus vehicula nunc nisi, non volutpat felis maximus aliquet. Aenean cursus magna quis justo dapibus, vel posuere ante imperdiet. Nunc lobortis sagittis purus, vitae placerat est scelerisque luctus.",
-    icon: React.createElement(TbWriting),
+    icon: React.createElement(TbBriefcase),
     date: "2020 - 2021",
   },
   {
@@ -115,7 +115,7 @@ export const skills = [
   "Apollo",
   "Git",
   "PWAs",
-  "JWT",
+  "JWT Auth",
   "Framer Motion",
   "D3.js",
   "DITA XML",

@@ -33,29 +33,8 @@ export default function RootLayout({
           ></div>
           <div
             className="absolute left-[-24rem] top-[-1rem] -z-10 h-[31.25rem] w-[50rem] rounded-full
-          bg-[#dbd7fb] blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"
+          bg-[#dbd7fb] opacity-95 blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"
           ></div>
-          <div
-            className="absolute left-[30rem] top-[74rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full
-          bg-[#fbe2e3] blur-[10rem] sm:w-[68.75rem]"
-          ></div>
-          <div
-            className="absolute right-[-24rem] top-[158rem] -z-10 h-[31.25rem] w-[50rem] rounded-full
-          bg-[#dbd7fb] blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"
-          ></div>
-          <div
-            className="absolute right-[-11rem] top-[210rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full
-          bg-[#fbe2e3] blur-[10rem] sm:w-[68.75rem]"
-          ></div>
-          <div
-            className="absolute bottom-[-1rem] right-[-24rem] -z-10 h-[31.25rem] w-[50rem] rounded-full
-          bg-[#fbe2e3] blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"
-          ></div>
-          <div
-            className="absolute bottom-[-6rem] left-[50rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full
-          bg-[#dbd7fb] blur-[10rem] sm:w-[68.75rem]"
-          ></div>
-
           {children}
         </ActiveSectionContextProvider>
         <Footer />
