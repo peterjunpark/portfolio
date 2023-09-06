@@ -37,7 +37,7 @@ export default function Intro() {
             <Image
               src={avatar}
               alt="Peter Park's handsome face"
-              priority={true}
+              priority
               quality={95}
               className="h-28 w-28 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
