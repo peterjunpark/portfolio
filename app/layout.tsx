@@ -28,8 +28,8 @@ export default function RootLayout({
 
           {/* Blurry color splashes in the background */}
           <div
-            className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full
-          bg-[#fbe2e3] blur-[10rem] sm:w-[68.75rem]"
+            className="absolute right-[-5rem] top-72 -z-10 h-[31.25rem] w-[50rem] rounded-full bg-[#fbe2e3]
+          blur-[10rem] sm:top-[-6rem] sm:w-[68.75rem]"
           ></div>
           <div
             className="absolute left-[-24rem] top-[-1rem] -z-10 h-[31.25rem] w-[50rem] rounded-full
