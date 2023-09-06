@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} relative bg-stone-100 pt-24 text-slate-950 sm:pt-32`}
+        className={`${inter.className} relative overflow-x-hidden bg-stone-100 pt-24 text-slate-950 sm:pt-32`}
       >
         <ActiveSectionContextProvider>
           <Nav />

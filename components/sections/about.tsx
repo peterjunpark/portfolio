@@ -20,7 +20,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       className="sectionEndMargin max-w-[45rem] scroll-mt-32 text-center leading-7"
     >
-      <SectionHeading>More about me</SectionHeading>
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         In the realm of development, my bread-and-butter toolkit is the MERN
         stack. <span className="font-semibold">Continual learning</span> is
