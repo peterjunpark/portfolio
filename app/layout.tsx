@@ -21,7 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} relative overflow-x-hidden bg-stone-100 pt-24 text-slate-950 sm:pt-32`}
+        className={`${inter.className} relative overflow-x-hidden bg-stone-100 pt-24
+        text-slate-950 sm:pt-20`}
       >
         <ActiveSectionContextProvider>
           <Nav />
@@ -33,7 +34,7 @@ export default function RootLayout({
           ></div>
           <div
             className="absolute left-[-24rem] top-[-1rem] -z-10 h-[31.25rem] w-[50rem] rounded-full
-          bg-[#dbd7fb] opacity-95 blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"
+          bg-[#dbd7fb] opacity-95 blur-[10rem] sm:left-[-41rem] sm:w-[68.75rem] md:left-[-39rem] lg:left-[-31rem] xl:left-[-30rem] 2xl:left-[-20rem]"
           ></div>
           {children}
         </ActiveSectionContextProvider>
