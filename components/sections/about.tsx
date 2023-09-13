@@ -22,13 +22,13 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        In the realm of development, my bread-and-butter toolkit is the MERN
-        stack. <span className="font-semibold">Continual learning</span> is
-        integral to my approach, whether it involves creating engaging front-end
-        interfaces or designing server-side solutions. My goal is to deliver
-        code that aligns with both user expectations and business objectives.
-        And my commitment to detail and adherence to best practices help ensure
-        the dependability of my work.
+        In the sphere of development, my go-to toolkit is the MERN stack.{" "}
+        <span className="font-semibold">Continual learning</span> is integral to
+        my approach, whether it involves creating engaging front-end interfaces
+        or designing server-side solutions. My goal is to deliver code that
+        aligns with both user expectations and business objectives. And my
+        commitment to detail and adherence to best practices help ensure the
+        dependability of my work.
         <br />
         <br />
         As a technical writer, I play a vital role in bridging the gap between

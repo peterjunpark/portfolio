@@ -108,7 +108,7 @@ export default function Intro() {
           <TbDownload className="-translate-y-[0.04rem] opacity-70 group-hover:translate-y-[0.08rem]" />
         </a>
         <a
-          href="https://linkedin.com/in/qkr0wns"
+          href="https://linkedin.com/in/qkrwns"
           target="_blank"
           className="flex items-center gap-2 rounded-full border
           border-black/10 bg-white p-3 text-3xl text-stone-900 outline-none
@@ -117,7 +117,7 @@ export default function Intro() {
           <TbBrandLinkedin className="group-hover:scale-[1.15]" />
         </a>
         <a
-          href="https://github.com/qkr0wns"
+          href="https://github.com/qkrwns"
           target="_blank"
           className="flex items-center gap-2 rounded-full border
           border-black/10 bg-white p-3 text-3xl text-stone-900 outline-none

@@ -36,15 +36,15 @@ export const experiences = [
     title: "Graduated coding bootcamp",
     location: "Toronto, ON",
     description:
-      "I successfully completed a coding bootcamp program offered by University of Toronto School of Continuing Studies. Throughout this intensive program, I gained a solid understanding of the fundamentals of web development, which encompassed essential web technologies, popular front-end and back-end frameworks, testing, and fundamental computer science principles. Through multiple group projects, I had the opportunity to collaborate within a team of developers under the Agile methodology, gaining practical experience in project management and teamwork.",
+      "I successfully completed a coding bootcamp program offered by University of Toronto School of Continuing Studies. Through this intensive program, I gained a solid understanding of the fundamentals of web development, which encompassed essential web technologies, popular front-end and back-end frameworks, testing, and fundamental computer science principles. Through multiple group projects, I had the opportunity to collaborate within a team of developers under the Agile methodology, gaining practical experience in project management and teamwork.",
     icon: React.createElement(TbSchool),
     date: "2023",
   },
   {
     title: "Technical Writer, CX",
-    location: "Toronto",
+    location: "Toronto; Mississauga",
     description:
-      "My roles as a technical writer at both a fintech company and a transit technology company allowed me to excel in simplifying technical concepts into user-friendly documentation. I closely collaborated with development and product teams to grasp the nuances of the products and systems, ensuring that end-users could effectively utilize the technology. This experience deepened my understanding of both the technical and communicative aspects of the industry.",
+      "My roles as a technical writer at a fintech company and at a transit technology company allowed me to excel in simplifying technical concepts into user-friendly documentation. I closely collaborated with development and product teams to grasp the nuances of the products and systems, ensuring that end-users could effectively utilize the technology. This experience deepened my understanding of both the technical and communicative aspects of the industry.",
     icon: React.createElement(TbBriefcase),
     date: "2021 - Present",
   },
@@ -52,7 +52,7 @@ export const experiences = [
     title: "Copywriter, SEO",
     location: "Mississauga, ON",
     description:
-      "As a copywriter specializing in SEO, I was responsible for crafting content that not only engaged readers but also adhered to search engine optimization best practices. This role provided valuable insights into web technologies and search engine algorithms, enhancing my understanding of the digital landscape.",
+      "As a copywriter specializing in SEO, I was responsible for crafting content that not only engaged readers but also adhered to search engine optimization best practices. This role provided valuable insights into web technologies and modern digital marketing, enhancing my understanding of the digital landscape.",
     icon: React.createElement(TbBriefcase),
     date: "2020 - 2021",
   },
@@ -60,7 +60,7 @@ export const experiences = [
     title: "Received B.A. in English Studies",
     location: "Toronto, ON",
     description:
-      "I graduated with a bachelor of arts in English with French bilingual distinction from York University—Glendon Campus. This program equipped me with language, literature, and critical thinking skills, bolstering my communication and analytical abilities.",
+      "I graduated with a bachelor of arts in English with French bilingual distinction from York University—Glendon Campus. This program equipped me with language, literature, and critical thinking skills, strengthening my communication and analytical abilities.",
     icon: React.createElement(TbSchool),
     date: "2018",
   },
