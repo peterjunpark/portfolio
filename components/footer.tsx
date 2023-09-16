@@ -12,7 +12,7 @@ export default function Footer() {
           href="https://github.com/qkr0wns/portfolio"
           className="hover:underline focus:underline active:underline"
         >
-          github.com/qkr0wns/portfolio
+          github.com/qkrwns/portfolio
         </a>
       </p>
     </footer>

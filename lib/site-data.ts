@@ -103,6 +103,12 @@ export const projects = [
     ],
     imageUrl: portfolioSc,
   },
+  {
+    title: "Featured Documentation",
+    description: "You're looking at it.",
+    tags: ["Docs-as-code", "DITA XML"],
+    imageUrl: profile,
+  },
 ] as const;
 
 export const skills = [
