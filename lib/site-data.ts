@@ -2,6 +2,7 @@ import React from "react";
 import { TbBriefcase, TbSchool } from "react-icons/tb";
 import profile from "@/public/profile.jpg";
 import portfolioSc from "@/public/portfolio-sc.png";
+import visualizerSc from "@/public/visualizer-sc.png";
 // Add images to public
 
 export const links = [
@@ -46,7 +47,7 @@ export const experiences = [
     description:
       "My roles as a technical writer at a fintech company and at a transit technology company allowed me to excel in simplifying technical concepts into user-friendly documentation. I closely collaborated with development and product teams to grasp the nuances of the products and systems, ensuring that end-users could effectively utilize the technology. This experience deepened my understanding of both the technical and communicative aspects of the industry.",
     icon: React.createElement(TbBriefcase),
-    date: "2021 - Present",
+    date: "2021 - 2023",
   },
   {
     title: "Copywriter, SEO",
@@ -68,9 +69,15 @@ export const experiences = [
 
 export const projects = [
   {
-    title: "Mensu",
+    title: "Algorithm Visualizer",
     description:
-      "A platform for restaurant owners to create and present gorgeous, mobile-optimized digital menus to their customers.",
+      "A DSA visualizer with instructive animations to demonstrate common patterns.",
+    tags: ["Next.js 13", "React", "TailwindCSS", "PWA", "TypeScript", "Vercel"],
+    imageUrl: visualizerSc,
+  },
+  {
+    title: "Word Weaver",
+    description: "A GPT-powered crossword generator.",
     tags: [
       "WIP",
       "PWA",
@@ -84,18 +91,11 @@ export const projects = [
     imageUrl: profile,
   },
   {
-    title: "DSA Visualizer",
-    description:
-      "A data structures and algorithms visualizer with instructive animations to help clarify common patterns.",
-    tags: ["WIP", "React", "Next.js 13", "D3.js", "TailwindCSS", "TypeScript"],
-    imageUrl: profile,
-  },
-  {
     title: "Portfolio",
     description: "You're looking at it.",
     tags: [
-      "React",
       "Next.js 13",
+      "React",
       "TailwindCSS",
       "Framer Motion",
       "Typescript",
